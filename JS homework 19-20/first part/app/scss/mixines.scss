@@ -1,0 +1,24 @@
+@mixin twitter($left, $top) {
+	display: block;
+    height: 17px;
+    width: 17px;
+    background: url(../../img/share_icons.svg);
+    background-position: $left $top;
+}
+
+@mixin faceb($left, $top) {
+	background-position: $left $top;
+}
+
+@mixin text($color, $family, $size) {
+	color: $color;
+	font-family: $family;
+	font-size: $size;
+}
+
+@mixin box($width) {
+	display: inline-block;
+	vertical-align: top;
+	width: $width;
+	box-sizing: border-box;
+}

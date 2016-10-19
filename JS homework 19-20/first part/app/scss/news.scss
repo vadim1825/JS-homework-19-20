@@ -1,0 +1,84 @@
+//background
+
+.pannel {
+	background-color: #f7f7f7;
+	padding-top: 60px;
+	padding-bottom: 80px;
+}
+
+.news_wrapper {
+	padding-right: 20px;
+	@include box(50%);
+}
+
+//section header
+
+.news_head {
+    @include text(#2a2d32, $ubuntu, 24px);
+    margin-bottom: 45px;
+}
+
+.news {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+//styles for images
+
+.news__image {
+	width: 150px;
+	height: 150px;
+    background: url(../../img/engineering.png) no-repeat;
+    float: left;
+    margin-right: 50px;
+}
+
+.news__calendar {
+	position: absolute;
+	top: 35px;
+	left: -20px;
+	height: 80px;
+	width: 40px;
+	background: url(../../img/calendar.svg) no-repeat;
+	background-position: -48px 0px;
+}
+
+//article header
+
+.news__header {
+    @include text(#2a2d32, $arial, 16px);
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.news__header:hover {
+	color: #238beb;
+}
+
+.news__links {
+    @include text(#9d9d9d, $arial, 13px);
+    margin: 10px 0px 30px 0px;
+}
+
+.news__link {
+	text-decoration: none;
+    @include text(#238beb, $arial, 13px);
+}
+
+.news__article {
+    @include text(#8a8a8a, $arial, 13px);
+}
+
+//styles for second article
+
+.news--second {
+	margin-bottom: 0px;
+}
+
+.news--second .news__image {
+	background: url(../../img/electrical.png) no-repeat;
+}
+
+.news--second .news__calendar {
+	background-position: 0px 0px;
+}

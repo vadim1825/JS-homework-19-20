@@ -1,0 +1,66 @@
+.banners_wrapper {
+    @include box(49%);
+}
+
+.banners_head {
+	margin-bottom: 50px;
+    @include text(#2a2d32, $ubuntu, 24px);
+}
+
+//styles for section with plus or minus
+
+.banners__box {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 38px;
+	width: 40px;
+	border-right: 1px solid gray;
+	font-size: 30px;
+	text-align: center;
+	color: black;
+}
+
+//styles for title box
+
+.banners__header {
+	@include box(560px);
+	position: relative;
+	height: 40px;
+	border: 1px solid gray;
+	margin: 0px 0px 10px -5px;
+	padding: 12px 0px 0px 55px;
+    @include text(#000, $ubuntu, 13px);
+}
+
+.banners__header:hover {
+    cursor: pointer;
+}
+
+//styles for text
+
+.banners__text {
+	padding: 30px 0px 40px 40px;
+    @include text(#8a8a8a, $arial, 13px);
+}
+
+//hides the text
+
+.slide {
+	display: none;
+}
+
+//styles for opened title box
+
+.open_banner {
+    border: 1px solid white;
+    background-color: #f4b60d;
+    color: white;
+}
+
+//styles for opened section with plus or minus
+
+.open_box {
+    color: white;
+    border-right: 1px solid white;
+}

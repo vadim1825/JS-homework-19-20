@@ -1,0 +1,47 @@
+.lists {
+	background-color: #2a2d32;
+	padding: 60px 0px 140px 0px;
+}
+
+//wrappers for lists
+
+.list {
+	@include box(24.5%);
+	padding-right: 30px;
+}
+
+//header
+
+.list__head {
+	padding-bottom: 40px;
+    @include text(#fff, $ubuntu, 16px);
+}
+
+.list__block {
+	list-style: none;
+}
+
+.list__item {
+	border-bottom: 1px solid rgba(255, 255, 255, .07);
+}
+
+.list__item:last-child {
+	border-bottom: none;
+}
+
+//styles for links
+
+.list__link {
+	text-decoration: none;
+	display: block;
+	margin: 7px 0px 7px 0px;
+	opacity: .3;
+    @include text(#fff, $ubuntu, 13px);
+}
+
+//change styles when hovering
+
+.list__link:hover {
+	color: #248cec;
+	opacity: 1;
+}

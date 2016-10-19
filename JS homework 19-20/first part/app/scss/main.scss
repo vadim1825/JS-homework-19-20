@@ -1,0 +1,208 @@
+@import 'mixines.scss';
+
+@import 'variables.scss';
+
+@import 'carousel.scss';
+
+@import 'articles.scss';
+
+@import 'services.scss';
+
+@import 'news.scss';
+
+@import 'banners.scss';
+
+@import 'lists.scss';
+
+@import 'footer.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix {
+	display: table;
+	content: '';
+	clear: both;
+}
+
+.container{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 20px;
+	box-sizing: border-box;
+}
+
+.float_wrapper {
+	width: 100%;
+}
+
+//place the logo to the left
+
+.logo {                 
+    float: left;
+    margin: 35px 5px;
+}
+
+//to place social links on the right
+
+.sheared {
+    float: right;
+    margin-top: 50px;
+    margin-bottom: 45px;
+
+	ul {
+		list-style: none;
+    
+        li {
+        	display: inline-block;
+        	margin-left: 17px;
+        }
+
+        .facebook{
+        	@include twitter(0px, 18px);
+        }
+
+        .twit {
+        	@include twitter(-18px, 18px);
+        }
+
+        .rss {
+        	@include twitter(-34px, 18px);
+        }
+
+        .linked {
+        	@include twitter(-51px, 18px);
+        }
+
+        .skype {
+        	@include twitter(-67px, 18px);
+        }
+
+        //change color of links
+
+        .facebook:hover{
+        	@include faceb(0px, 1px);
+        }
+
+        .twit:hover {
+        	@include faceb(-18px, 2px);
+        }
+
+        .rss:hover {
+        	@include faceb(-34px, 1px);
+        }
+
+        .linked:hover {
+        	@include faceb(-51px, 1px);
+        }
+
+        .skype:hover {
+        	@include faceb(-67px, 1px);
+        }
+	}
+}
+
+//styles of navigation panel
+
+.navigation {
+	width: 1160px;
+    height: 56px;
+    padding-left: 4px;
+    background-color: #292d32;
+    box-shadow: 0 2px 5px rgba(0,1,1,.2);
+    background-image: linear-gradient(to top, rgba(0,1,1,.8) 0%, rgba(255,255,255,.2) 100%);
+    position: relative;
+
+    ul {
+    	list-style: none;
+    	width: 650px;
+    	float: left;
+
+    	li {
+    		display: inline-block;
+    		vertical-align: middle;
+
+            //styles of navigation links
+
+    		a {
+    			display: block;
+    			margin-left: -4px;
+    			padding: 22px 38px;
+    		    border-right: 1px solid #151515;
+    			text-decoration: none;
+                @include text(#fff, $ubuntu, 14px);
+    		}
+
+            //change color of links
+          
+            a:hover {
+                background-color: #238beb;
+                color: #f3b50d;
+                box-shadow: inset 0 0 5px rgba(0,0,0,.15);
+
+            }
+    	}
+    }
+
+    //to place form on the right
+
+    .nav_form {
+    	float: right;
+
+        //styles of input window
+        
+        input {
+        	width: 239px;
+            height: 38px;
+            padding-left: 15px;
+            margin: 9px;
+            border: 1px solid #17191d;
+            background-color: rgba(255,255,255,.05);
+            @include text(#fff, $arial, 12px);
+        }
+
+        //styles of confirm button
+
+        button {
+            border: none;
+            background: rgba(0, 0, 0, 0);
+            position: absolute;
+            height: 38px;
+            width: 38px;
+            top: 10px;
+            right: 10px;
+
+            img {
+            	height: 17px;
+            	width: 17px;
+            	opacity: .5;
+            }
+        }
+
+        button:active,
+        button:focus,
+        input:active,
+        input:focus {
+            outline: none;
+        }
+
+        button:hover{
+        	cursor: pointer;
+        }
+    }
+}
+
+//styles of partners icons
+
+.partners {
+	padding: 80px 0px;
+	list-style: none;
+}
+
+.partners__item {
+    display: inline-block;
+    margin: 0px 30px 0px 10px;
+}

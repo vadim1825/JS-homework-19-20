@@ -1,0 +1,30 @@
+footer {
+	box-sizing: border-box;
+	margin-top: -60px;
+	padding-top: 20px;
+	width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.contacts {
+	list-style: none;
+}
+
+.contacts__item {
+	float: left;
+	margin-right: 20px;
+}
+
+.contacts__item:last-child {
+	float: right;
+}
+
+.contacts__img {
+	opacity: .2;
+}
+
+.contacts__text {
+	opacity: .2;
+    @include text(#fff, $arial, 12px);
+}

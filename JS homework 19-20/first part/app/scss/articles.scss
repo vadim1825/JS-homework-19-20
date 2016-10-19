@@ -1,0 +1,74 @@
+main {
+    padding-top: 40px;
+}
+
+.articles_wrapper {
+	padding: 70px 0px;
+}
+
+//styles for big numbers
+
+.count {
+	@include box(9%);
+	opacity: .1;
+    @include text(#292b2d, $ubuntu, 90px);
+}
+
+//list wrapper
+
+.articles {
+	@include box(23%);
+}
+
+.menu {
+	list-style: none;
+}
+
+.menu__icon,
+.menu__title,
+.menu__article,
+.menu__item {
+	margin-bottom: 20px;
+}
+
+.menu__icon {
+	height: 40px;
+	width: 40px;
+	background: url(../../img/icons-1.svg) no-repeat;
+}
+
+.menu__title {
+    @include text(#292b2d, $ubuntu, 20px);
+}
+
+.menu__article {
+	padding-right: 10px;
+    @include text(#8a8a8a, $arial, 13px);
+}
+
+.menu__link {
+	display: block;
+    text-decoration: none;
+    @include text(#292b2d, $ubuntu, 13px);
+    background: url(../../img/arrows1.svg) no-repeat;
+	background-position: 70px -20px;
+}
+
+//change the color when hovering
+
+.menu__link:hover {
+	background-position: 70px 0px;
+    color: #238beb;
+}
+
+//change icon for second article
+
+.menu--tech .menu__icon {
+	background-position: -40px 0px;
+}
+
+//change icon for third article
+
+.menu--supp .menu__icon {
+	background-position: -80px 0px;
+}

@@ -1,0 +1,70 @@
+.services{
+    height: 500px;
+    background-color: #2a2d32;
+
+    //header
+
+    p {
+        @include text(#fff, $ubuntu, 24px);
+        padding: 40px 0px 50px 0px; 
+    }
+}
+
+.gallery {
+	list-style: none;
+}
+
+.gallery__item {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 25px;
+}
+
+.gallery__item:last-child {
+    margin: 0px;
+}
+
+.gallery__link {
+    display: block;
+    position: relative;
+}
+
+//cut picture to size
+
+.gallery__wrap {
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    background-color: #248beb;
+}
+
+.correct {
+	margin-left: -170px;
+}
+
+.gallery__img {
+	opacity: 1;
+}
+
+
+.correct1 {
+	margin-left: -120px;
+}
+
+//hide the cross
+
+.gallery__cross {
+	position: absolute;
+	top: 110px;
+	left: 110px;
+	opacity: 0;
+}
+
+//sets the text at the bottom
+
+.gallery__text{
+    position: absolute;
+	left: 70px;
+	bottom: -30px;
+    @include text(#fff, $ubuntu, 16px);
+}
